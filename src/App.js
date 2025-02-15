@@ -12,7 +12,7 @@ function App() {
   };
 
   const fetchCountryData = async () => {
-    let url = "https://restcountries.com/v3.1/all";
+    let url = "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries";
     try {
       let response = await axios.get(url);
       setCountryData(response.data);
@@ -31,7 +31,7 @@ function App() {
       setFilterCountryData(countryData);
     }
 
-    let url = "https://restcountries.com/v3.1/all";
+    let url = "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries";
 
     try {
       let response = await axios.get(url);
